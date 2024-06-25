@@ -55,6 +55,18 @@
   background-color: #ffbd39;
 }
 
+.block-20 {
+    display: block; /* Ensures the <a> tag behaves like a block element */
+    width: 100%; /* Example width for the <a> tag */
+    height: 200px; /* Example height for the <a> tag */
+    overflow: hidden; /* Hides any overflow content */
+}
+
+.block-20 img {
+    width: 100%; /* Ensures the image width fills the container */
+    height: 200px; /* Allows the image to scale proportionally */
+    display: block; /* Removes any default inline spacing */
+}
 
 /* Animation styles */
 #typing-animation {
@@ -405,7 +417,8 @@
           <div class="col-md-4 d-flex ftco-animate">
 			
           	<div class="blog-entry justify-content-end">
-              <a href="vid1.html" class="block-20 zoom-effect" style="background-image: url('images/html.png');">
+              <a href="vid1.html" class="block-20 zoom-effect">
+				<img src="images/html.png" />
               </a>
 
 
@@ -418,7 +431,8 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="vid2.html" class="block-20 zoom-effect" style="background-image: url('images/Game.jpg');">
+              <a href="vid2.html" class="block-20 zoom-effect">
+				<img src="images/Game.jpg" />
               </a>
               <div class="text mt-3 float-right d-block">
 
@@ -429,7 +443,8 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="vid3.html" class="block-20 zoom-effect" style="background-image: url('images/UI.jpg');">
+              <a href="vid3.html" class="block-20 zoom-effect">
+				<img src="images/UI.jpg" />
               </a>
               <div class="text mt-3 float-right d-block">
 
