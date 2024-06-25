@@ -104,36 +104,28 @@
   transform: scale(1.1);
 }
 .vid1 {
-    position: absolute;
-    top: 39%;
-    left: 20%;
-    border-radius: 10px;
+    margin-left: 40px;
+    /* transform: skew(0deg); */
  }
- .parallelogram {
-    position: absolute;
-	width: calc(100% - 400px);
-    height: 300px;
-    top: 35%;
-    left: 14%;
-	transform: skew(20deg);
-	background: #ffffff;
-}
+
+.parallelogram {
+	  width: 90%;
+    height: 270px;
+	  /* transform: skew(20deg); */
+	  background: #ffffff;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
 h2{
-    position: absolute;
-    top: 40%;
-    left: 50%;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    transform: skew(0deg);
+    /* transform: skew(0deg); */
 }
 h5{
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    width: calc(100% - 1100px);
-		height: 160px;
     color: rgb(0, 0, 0);
-    transform: skew(0deg);
     overflow-x: hidden;
 		overflow-y: scroll;
 }
@@ -146,6 +138,14 @@ h5{
   color: rgb(0, 136, 255);
   z-index: 10;
 }
+
+.project-section{
+  /* background-color: red; */
+  width: 80%;
+  height: 250px;
+  margin: 7% auto;
+}
+
 </style>
 </head>
 <body>
@@ -158,34 +158,38 @@ h5{
     
           <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav nav ml-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link"><span>About</span></a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link"><span>Resume</span></a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link"><span>Projects</span></a></li>
-              <li class="nav-item"><a href="index.htmll" class="nav-link"><span>Contact</span></a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="http://127.0.0.1:5500/index.htmll" class="nav-link"><span>Contact</span></a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-<div class="parallelogram"></div>
-<div class="circle"></div>
-<h2>
-  V.K Hospital website
-</h2>
-<h5>
-  this page ........
-</h5>
-    <div class="vid1">
-      <video width="400" height="227" controls autoplay>
-        <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/mp4">
-        <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/ogg">
-        Your browser does not support HTML video.
-      </video>
-    </div>
-  <div class="layer"></div>
- </div>
-
+      <div class="project-section">
+        <div class="parallelogram">
+            <section>
+              <div class="vid1">
+                <video width="400" height="227" style="border: 1px solid blue;" controls autoplay>
+                  <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/mp4">
+                  <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+            </section>
+            <section>
+              <h2>
+                V.K Hospital website
+              </h2>
+              <h5>
+                this page ........
+              </h5>
+            </section>
+        </div>
+      </div>
+      
  <script src="js/jquery.min.js"></script>
  <script src="js/jquery-migrate-3.0.1.min.js"></script>
  <script src="js/popper.min.js"></script>
