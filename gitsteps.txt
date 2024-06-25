@@ -1,0 +1,15 @@
+first time project
+
+git init - create git project
+git status - to check fils
+git  remote add origin https://github.com/M-Mohammed-suhaib/portfolio.git
+git remote -v - check if the url is added
+
+
+Normal everytime when git is present
+
+git status
+git commit -m "new files"
+git push
+
+
