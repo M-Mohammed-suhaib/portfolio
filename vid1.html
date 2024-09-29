@@ -3,214 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="shortcut icon" href="images/360_F_330230819_gnQgh3oCliAdC1dGuKGAwspNk2kvQfmx.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color:yellow;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-.vid1 {
-    margin-left: 40px;
-    /* transform: skew(0deg); */
- }
-
-.parallelogram {
-	  width: 90%;
-    height: 270px;
-	  /* transform: skew(20deg); */
-	  background: #ffffff;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-  }
-
-h2{
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    /* transform: skew(0deg); */
-}
-h5{
-    color: rgb(0, 0, 0);
-    overflow-x: hidden;
-		overflow-y: scroll;
-}
-
-.layer{
-  position: absolute;
-  top: 50%;
-  width: 500px;
-  height: 500px;
-  color: rgb(0, 136, 255);
-  z-index: 10;
-}
-
-.project-section{
-  /* background-color: red; */
-  width: 80%;
-  height: 250px;
-  margin: 7% auto;
-}
-
-</style>
+    <title>Video Page</title>
+    <link rel="stylesheet" href="vid1.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">M Mohammed Suhaib</a>
-          <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-          </button>
+    <div class="button-container">
+        <a href="index.html" class="home-button">Home</a>
+    </div>
+    <div class="container">
+        <h1>Video Title</h1>
+        <div class="video-container">
+            <video controls>
+                <source src="pv.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="description">
+            <h2>About the Video</h2>
+            <p>
+                Write a description about the video here. You can explain what the video is about, the key points, or any other relevant information.
+            </p>
+        </div>
+        <div class="link">
+            <h2>Related Link</h2>
+            <a href="your-link-url" target="_blank">Click here for more information</a>
+        </div>
+    </div>
     
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Home</span></a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>About</span></a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Resume</span></a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/index.html" class="nav-link"><span>Projects</span></a></li>
-              <li class="nav-item"><a href="http://127.0.0.1:5500/index.htmll" class="nav-link"><span>Contact</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="project-section">
-        <div class="circle"></div>
-        <div class="parallelogram">
-            <section>
-              <div class="vid1">
-                <video width="400" height="227" style="border: 1px solid rgb(255, 221, 0);" controls autoplay>
-                  <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/mp4">
-                  <source src="./V.K Hospital _ Home - Brave 2024-06-18 18-42-12.mp4" type="video/ogg">
-                  Your browser does not support HTML video.
-                </video>
-              </div>
-            </section>
-            <section>
-              <h2>
-                V.K Hospital Website
-              </h2>
-              <h5>
-                A professional and user-friendly website for Suhaib Hospital, featuring:,<br>
-
-                ! Home Page: Welcoming hero section with a call-to-action.<br>
-                ! About Us: Overview of the hospital's mission, vision, and history.<br>
-                ! Services: Detailed list of medical services offered.<br>
-                ! Doctors: Profiles of doctors with their specializations and experience.<br>
-                ! Contact: Contact information, address, and a map.<br>
-                  The design employs a clean, professional color scheme and responsive layout for an optimal user experience on all devices.
-              </h5>
-            </section>
-        </div>
-      </div>
-      
- <script src="js/jquery.min.js"></script>
- <script src="js/jquery-migrate-3.0.1.min.js"></script>
- <script src="js/popper.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
- <script src="js/jquery.easing.1.3.js"></script>
- <script src="js/jquery.waypoints.min.js"></script>
- <script src="js/jquery.stellar.min.js"></script>
- <script src="js/owl.carousel.min.js"></script>
- <script src="js/jquery.magnific-popup.min.js"></script>
- <script src="js/aos.js"></script>
- <script src="js/jquery.animateNumber.min.js"></script>
- <script src="js/scrollax.min.js"></script>
- 
- <script src="js/main.js"></script>
+    <br>
+    
+    
 </body>
 </html>
